@@ -41,7 +41,6 @@ public class AiRouteController {
     // ==================================================================
     @PostMapping("/report")
     public ResponseEntity<AiResponse.Report> getReport(@RequestBody AiRequest.Report request) {
-        log.info("API Request: LLM Report Generation - User: {}", request.getUserId());
         return ResponseEntity.ok(aiService.getReport(request));
     }
 
