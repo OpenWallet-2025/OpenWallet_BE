@@ -44,7 +44,7 @@ public class AiResponse {
     @NoArgsConstructor
     @AllArgsConstructor
     public static class AiErrorResponse {
-        private String detail;
+        private Object detail;
     }
 
 
